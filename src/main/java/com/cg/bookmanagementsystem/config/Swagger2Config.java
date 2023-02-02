@@ -18,7 +18,9 @@ public class Swagger2Config {
 	@Bean
 	public Docket api() 
 	{
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.cg.canteenmanagementsystem.controller")).paths(PathSelectors.regex("/.*")).build().apiInfo(apiEndPointsInfo());
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.basePackage("com.cg.bookmanagementsystem.controller"))
+				.paths(PathSelectors.regex("/.*")).build().apiInfo(apiEndPointsInfo());
 	}
 	private ApiInfo apiEndPointsInfo() 
 	{

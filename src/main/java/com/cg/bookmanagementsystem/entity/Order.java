@@ -1,5 +1,4 @@
 package com.cg.bookmanagementsystem.entity;
-
 import java.util.Date;
 
 import javax.persistence.Column;
